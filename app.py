@@ -7,6 +7,8 @@ import pickle
 import random
 import json
 
+
+nltk.download('punkt')
 words,labels=pickle.load(open("data.pkl","rb"))
 model=pickle.load(open("tree_Classifier_model.pkl","rb"))
 stemmer=LancasterStemmer()
